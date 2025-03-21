@@ -1,0 +1,16 @@
+{
+    "compact": true,
+    "controlFlowFlattening": false,
+    "deadCodeInjection": false,
+    "debugProtection": false,
+    "disableConsoleOutput": false,
+    "identifierNamesGenerator": "mangled",
+    "log": false,
+    "numbersToExpressions": false,
+    "renameGlobals": false,
+    "selfDefending": false,
+    "simplify": false,
+    "splitStrings": false,
+    "stringArray": false,
+    "unicodeEscapeSequence": false
+}

@@ -1,0 +1,169 @@
+.solvecaptcha {
+    display: flex;
+    width: auto !important;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #BFE6EC !important;
+    background: #ECFAFC;
+    transition: background-color .2s ease;
+    max-width: 304px;
+    min-width: 200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #19304E;
+}
+
+.solvecaptcha_fixed {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 200000000000;
+}
+
+.solvecaptcha:hover {
+    background: #afe1e8;
+    cursor: pointer;
+}
+
+.solvecaptcha[data-state=solving] {
+    cursor: not-allowed;
+    color: #8188A4;
+}
+
+.solvecaptcha[data-state=solved] {
+    cursor: not-allowed;
+    color: #0094B6;
+    border-color: #0094B6;
+}
+
+.solvecaptcha[data-state=error] {
+    color: #df4343;
+    border-color: #df4343;
+}
+
+.solvecaptcha-image {
+    width: 38px;
+    flex: 0 0 38px;
+}
+
+.solvecaptcha-image img {
+    display: block;
+    margin: 8px auto !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.solvecaptcha[data-state=solving] .solvecaptcha-image img {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: .2;
+    }
+}
+
+.solvecaptcha-info {
+    padding: 6px 8px !important;
+    word-break: break-word;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: inherit;
+    text-align: center;
+    width: 100%;
+}
+
+.grecaptcha-badge .solvecaptcha {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.solvecaptcha-geetest {
+    margin: 5px auto 0 auto;
+}
+
+.solvecaptcha-keycaptcha {
+    margin: 5px auto 0 auto;
+    width: 300px;
+}
+
+.solvecaptcha-keycaptcha-working {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* TOAST */
+.twcpt-toast-container {
+    display: inline-block;
+    width: 300px;
+    position: fixed;
+    z-index: 1031;
+    right: 20px;
+    top: 20px;
+}
+
+.twcpt-toast {
+    padding: 10px 20px 10px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-out;
+    background-color: #E1F9F8;
+    color: #19304E;
+    opacity: 0;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.twcpt-toast.visible {
+    opacity: 0.99;
+    margin-top: 0px;
+}
+
+.twcpt-toast-logo {
+    height: 20px !important;
+    vertical-align: baseline !important;
+}
+
+.twcpt-toast-message {
+    color: inherit;
+    font-size: 13px !important;
+    font-family: 'Open Sans' !important;
+    font: 13px Verdana, arial, sans-serif !important;
+    line-height: 1.5 !important;
+    margin-top: 10px;
+}
+
+.twcpt-toast-message a {
+    color: #0094B6 !important;
+    text-decoration: underline !important;
+}
+
+.twcpt-toast-message a:hover {
+    text-decoration: none !important;
+}
+
+.twcpt-toast>.close {
+    position: relative;
+    top: -2px;
+    right: -8px;
+    float: right;
+    font-size: 21px;
+    font-weight: 500 !important;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .3;
+    color: #19304E;
+}
+
+.twcpt-toast>.close:hover {
+    color: #19304E;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .5;
+}
+
+[data-captcha-type="recaptcha_audio"] {
+    visibility: hidden;
+}
