@@ -26,7 +26,7 @@ function initApiClient(apiKey) {
         service: "api.solvecaptcha.com",
         defaultTimeout: 300,
         pollingInterval: 5,
-        softId: 4842,
+        softId: 4843,
     });
 }
 
