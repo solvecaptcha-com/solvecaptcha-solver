@@ -1,10 +1,10 @@
 {
-    "compact": true,
+    "compact": false,
     "controlFlowFlattening": false,
     "deadCodeInjection": false,
     "debugProtection": false,
-    "disableConsoleOutput": false,
-    "identifierNamesGenerator": "mangled",
+    "disableConsoleOutput": true,
+    "identifierNamesGenerator": "hexadecimal",
     "log": false,
     "numbersToExpressions": false,
     "renameGlobals": false,
@@ -13,4 +13,4 @@
     "splitStrings": false,
     "stringArray": false,
     "unicodeEscapeSequence": false
-}
+  }
